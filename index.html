@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-	<link href="./global.css" rel="stylesheet">
+    <link href="./global.css" rel="stylesheet" />
     <title>Frontend Mentor | QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,6 +23,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        visibility: hidden;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -26,9 +31,22 @@
     </style>
   </head>
   <body>
-    <article class="bg-linear-240 flex flex-col">
-      Improve your front-end skills by building projects Scan the QR code to
-      visit Frontend Mentor and take your coding skills to the next level
+    <article class="article">
+      <img
+	  width="280"
+        class="image"
+        src="/images/image-qr-code.png"
+        alt="qr"
+      />
+      <div class="text__container">
+        <h1 class="header">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="description">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

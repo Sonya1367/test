@@ -1,1 +1,73 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+:root {
+  --slate-900: #1f314f;
+  --slate-500: #68778d;
+  --slate-300: #d5e1ef;
+  --blue-600: #2c7dfa;
+  --blue-500: #3685ff;
+  --white: #ffffff;
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+
+  --font-size-text-preset-1: 22px;
+  --font-size-text-preset-2: 15px;
+}
+
+body {
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--slate-300);
+}
+.article {
+  max-width: 280px;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300, 24px);
+  background: var(--color-white, #fff);
+  border-radius: 20px;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.image__container {
+}
+.image {
+}
+
+.text__container {
+
+}
+.header {
+  color: var(--color-slate-900, #1f314f);
+  text-align: center;
+  font-feature-settings:
+    'liga' off,
+    'clig' off;
+  font-family: Outfit;
+  font-size: var(--font-size-text-preset-1, 22px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 26.4px */
+}
+.description {
+  color: var(--color-slate-500, #68778d);
+  text-align: center;
+  font-feature-settings:
+    'liga' off,
+    'clig' off;
+  font-family: Outfit;
+  font-size: var(--font-size-text-preset-2, 15px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 21px */
+  letter-spacing: 0.2px;
+}
+.attribution {
+}
